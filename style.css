@@ -356,7 +356,7 @@ body {
   }
 
   .plants-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns Display */
+    grid-template-columns: repeat(2, 1fr); /*2 columns Display */
     gap: 20px;
   }
 }
@@ -364,7 +364,7 @@ body {
 /* Optional */
 @media (max-width: 480px) {
   .plants-grid {
-    grid-template-columns: 1fr; /* 1 column Display on very small screens*/
+    grid-template-columns: repeat(2, 1fr); /*2 columns */
   }
 }
 
