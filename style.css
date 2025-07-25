@@ -251,6 +251,7 @@ body {
 
 
 
+
 /* Plants Section */
 .plants-section {
   padding: 60px 120px;
@@ -278,44 +279,50 @@ body {
 
 .plants-subtitle {
   font-size: 16px;
-  color: #7A7A7A;
+  color: #555;
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
 }
-.plants-grid { /* Grid */
+
+.plants-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   justify-content: center;
 }
-.plant-card { /* Cards */
+
+.plant-card {
   background: none;
   text-align: center;
   transition: transform 0.3s ease;
 }
+
 .plant-card:hover {
   transform: translateY(-6px);
 }
+
 .plant-card img {
   width: 100%;
   height: auto;
   border-radius: 4px;
   margin-bottom: 12px;
 }
+
 .plant-name {
   font-size: 18px;
   font-weight: 500;
   color: #222;
   margin-bottom: 5px;
 }
+
 .plant-price {
   font-size: 16px;
   font-weight: bold;
   color: #000;
   margin-bottom: 15px;
 }
-.add-to-cart { /* Button */
+.add-to-cart { /* ADD TO CART BUTTON */
   display: inline-block;
   width: 100%;
   padding: 10px 0;
@@ -323,18 +330,18 @@ body {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
-  border: none;
   text-transform: uppercase;
-  cursor: pointer;
+  text-decoration: none; 
+  text-align: center;
+  border-radius: 4px;
   transition: background 0.3s ease;
 }
-
 .add-to-cart:hover {
   background-color: #c64808;
 }
 
 
-/* Plants Responsive */
+/* Plant Responsive */
 @media (max-width: 768px) {
   .plants-section {
     padding: 40px 20px;
@@ -347,11 +354,21 @@ body {
   .plants-subtitle {
     font-size: 15px;
   }
+
   .plants-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns Display */
     gap: 20px;
   }
 }
+
+/* Optional */
+@media (max-width: 480px) {
+  .plants-grid {
+    grid-template-columns: 1fr; /* 1 column Display on very small screens*/
+  }
+}
+
+
 
 
 
@@ -867,6 +884,75 @@ body {
     height: 26px;
   }
 }
+
+
+
+
+
+/* Alert for Add to Cart */
+.alert-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  color: #333;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  display: none;
+  z-index: 9999;
+  text-align: center;
+  width: 280px;
+}
+
+.alert-box p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.close-alert {
+  display: inline-block;
+  background: #FF7505;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+
+.close-alert:hover {
+  background: #d96505; 
+}
+
+.alert-box:target {
+  display: block;
+}
+
+
+/*Alert Responsive */
+@media (max-width: 768px) {
+  .alert-box {
+    width: 60%;
+    padding: 18px;
+  }
+  .alert-box p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .alert-box {
+    width: 80%;
+    padding: 15px;
+  }
+  .alert-box p {
+    font-size: 14px;
+  }
+}
+
 
 
 
