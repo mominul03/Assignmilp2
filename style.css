@@ -432,3 +432,61 @@ body {
   font-size: 24px;
   color: #646161;
 }
+
+
+/*Plants Lover Responsive */
+@media (max-width: 768px) {
+  .plants-lover-section {
+    flex-direction: column;
+    padding: 30px 20px; 
+    align-items: center;
+  }
+
+  .plants-lover-image,
+  .plants-lover-content {
+    width: 100%;
+  }
+
+  .plants-lover-image {
+    text-align: center;
+    margin-left: -40px; 
+  }
+
+  .flower-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transform: none;
+  }
+
+ .trusted-badge {
+    width: 90px;
+    height: 90px;
+    top: -10px;
+    right: -15px;
+  }
+
+  .plants-lover-content {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .plants-lover-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .plants-lover-list li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+
+  .plants-lover-list li::before {
+    font-size: 18px;
+  }
+}
+
