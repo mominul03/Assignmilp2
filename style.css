@@ -138,3 +138,138 @@ body {
     color: #000;
   }
 }
+
+
+
+
+/* Banner Section */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 40px 50px 120px;
+  background-color: #F0F5FF;
+  gap: 40px;
+}
+
+.banner-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.banner-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.banner-title .banner-text1 {
+  color: #000000;
+}
+
+.banner-title .banner-text2 {
+  color: #E95A08;
+}
+
+.banner-text {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.banner-image img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 1px;
+  position: relative;
+  left: -100px;
+}
+
+
+
+
+
+/* Plants Section */
+.plants-section {
+  padding: 60px 120px;
+  background-color: #F0F5FF;
+  text-align: center;
+}
+
+.plants-header {
+  margin-bottom: 50px;
+}
+
+.plants-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.plants-title .plants-text1 {
+  color: #E95A08;
+}
+
+.plants-title .plants-text2 {
+  color: #000000;
+}
+
+.plants-subtitle {
+  font-size: 16px;
+  color: #7A7A7A;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.plants-grid { /* Grid */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-content: center;
+}
+.plant-card { /* Cards */
+  background: none;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.plant-card:hover {
+  transform: translateY(-6px);
+}
+.plant-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+.plant-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 5px;
+}
+.plant-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 15px;
+}
+.add-to-cart { /* Button */
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #F05A0D;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #c64808;
+}
+
